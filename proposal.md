@@ -1,0 +1,13 @@
+The Big Idea: We are developing a mathmatics tools to help students with the linear algebra question. The topic we are going to explore is matrix in linear algebra. We plan to create a matrix calculator that can do the basic matrix calculation. After we generate the functions of matrix calculator, users are able to input the value in each matrix and get the answer directly instead of calculating by hands. Our mvp is a program that can do basic matrix multiplication with basic user interface. Our stretch is to solve matrix related linear algebra problem.
+
+Learning goals: Our team shared learning goal is to explore and solve complex math calculation through python programming. In our team, Thomas's learning goal is to learn to design and write complex function and solve problems. Peter's learning goal is to explore user interface and also focus on delivering result and getting user input with aesthestics. Leo's learning goal is to developing output interface and helping debugging the code.
+
+Implementation plan: We plan to make a website which shows the matrix calculator for user to enter the value in each matrix. To satisfy different needs in calculation, we also want to set up other functions to do the more complex matrix calculation. 
+
+Project Schedule: The first week we will create the framework of our project and write the outline of our code. The second week is to find which function and libraries we will use. Since developing the code in detail is time-consuming, which should take the most time in all of the process, we plan to assign 2 to 3 weeks on writing the detailed code and make sure all the function run smoothly. In the last couple weeks, we will debug and finalize the code by doing the code test and maybe asking professor the unsolving questions to better improve our code.
+
+Collaboration plan: As a team, we always brainstorm the framework, finding the functions and libraries, developing the detaied code, and debugging together. Since all of our team members live in the same building, we can meet in person insteading of attending the project discussion online. For the frequency of our meeting, it is a good idea that we can meet in person twice a week for 3 to 4 hours working to make sure everyone are in the same page. 
+
+Risks: 1. Program does not recognize the user input. 2. The calculation does not funtion properly. 3. Result delivery is confusing and shows error.
+
+Additional Course Content: "Loop fuction", "if,else function", "string", and etc.
