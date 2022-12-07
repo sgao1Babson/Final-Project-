@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Matrix Calcaulatorr</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+	<style>
+		body {
+			background-image: url('https://i.ytimg.com/vi/VxDaB7muReQ/maxresdefault.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+		}
+
+		header {
+			text-align: center;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			order: 1;
+			font-family: "Audiowide", sans-serif;
+			color:white;
+			font-size: xxx-large;
+			background-color:transparent;
+			-webkit-text-stroke:dodgerblue 3px ;
+			/* text-shadow: 5px 5px 5px aqua; */
+		}
+
+		#upper {
+			margin-left: auto;
+			margin-right: auto;
+			display: flex;
+			flex-flow: row wrap;
+			width: 23em;
+			background-color: transparent;
+			align-items: center;
+			justify-content: center;
+		}
+
+		#matrix1,
+		#matrix2 {
+			order: 1;
+			width: 9em;
+			height: 40%;
+		}
+
+		#operations {
+			order: 1;
+			width: 5em;
+			height: 40%;
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.operation {
+			width: 5em;
+			height: 10%
+		}
+
+		.parent {
+			display: flex;
+			flex-flow: row wrap;
+			width: 9em;
+			background: transparent;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.title {
+			order: 1;
+			font-family: "Audiowide", sans-serif;
+			width: 9em;
+			height: 10%;
+			text-align: center;
+			color: white;
+			-webkit-text-stroke:0.1px yellow;
+			/* text-shadow: 5px 5px 5px aqua; */
+		}
+
+		.m1r1,
+		.m2r1 {
+			order: 2;
+			width: 3em;
+			height: 10%;
+			text-align: center;
+		}
+
+		.m1r2,
+		.m2r2 {
+			order: 3;
+			width: 3em;
+			height: 10%;
+			text-align: center;
+		}
+
+		.m1r3,
+		.m2r3 {
+			order: 4;
+			width: 3em;
+			height: 10%;
+			text-align: center;
+		}
+
+		.functions {
+			order: 5;
+			width: 9em;
+			height: 40%;
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.function {
+			width: 8em;
+			height: 10%;
+			border-radius: 2em;
+		}
+
+		#console {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 40%;
+			height: 50%;
+		}
+
+	</style>
+</head>
+
+<body>
+	<header>
+		<p1>Matrix Calcaulator</p1>
+	</header>
+	<form method="post" action="/cal">
+		<div id="upper">
+			<div id="matrix1" class="parent">
+				<h1 class="title">Matrix A</h1>
+				<input class="m1r1" name="m1r1c1" type="text" value=" " />
+				<input class="m1r1" name="m1r1c2" type="text" value=" " />
+				<input class="m1r1" name="m1r1c3" type="text" value=" " />
+				<input class="m1r2" name="m1r2c1" type="text" value=" " />
+				<input class="m1r2" name="m1r2c2" type="text" value=" " />
+				<input class="m1r2" name="m1r2c3" type="text" value=" " />
+				<input class="m1r3" name="m1r3c1" type="text" value=" " />
+				<input class="m1r3" name="m1r3c2" type="text" value=" " />
+				<input class="m1r3" name="m1r3c3" type="text" value=" " />
+			</div>
+			<div id="operations">
+				<input class="operation" type="submit" name="key" value="A x B" onclick="mc.multiplyMatrix()" />
+				<input class="operation" type="submit" name="key" value="A + B" onclick="mc.addMatrix()" />
+				<input class="operation" type="submit" name="key" value="A - B" onclick="mc.subtractMatrix()" />
+			</div>
+			<div id="matrix2" class="parent">
+				<h1 class="title">Matrix B</h1>
+				<input class="m2r1" name="m2r1c1" type="text" value=" " />
+				<input class="m2r1" name="m2r1c2" type="text" value=" " />
+				<input class="m2r1" name="m2r1c3" type="text" value=" " />
+				<input class="m2r2" name="m2r2c1" type="text" value=" " />
+				<input class="m2r2" name="m2r2c2" type="text" value=" " />
+				<input class="m2r2" name="m2r2c3" type="text" value=" " />
+				<input class="m2r3" name="m2r3c1" type="text" value=" " />
+				<input class="m2r3" name="m2r3c2" type="text" value=" " />
+				<input class="m2r3" name="m2r3c3" type="text" value=" " />
+			</div>
+		</div>
+	</form>
+	<br>
+	<div id="lower">
+		<textarea wrap="soft" rows="10" cols="20" id="console" disabled>{{mat}}</textarea>
+	</div>
+
+</body>
+
+</html>
