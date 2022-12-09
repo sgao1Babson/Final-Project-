@@ -1,7 +1,5 @@
 
-# Project Title
-
-Martrix Calculator 
+# Martrix Calculator 
 
 Designed by Peter Gao, Leo Liu and Thomas Du 
 
