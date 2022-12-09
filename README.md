@@ -2,11 +2,7 @@
 # Martrix Calculator 
 
 Designed by Peter Gao, Leo Liu and Thomas Du 
-
-
-
-
-
+Website: https://sites.google.com/view/pythonmatrixcalculator
 
 
 ## Goal
